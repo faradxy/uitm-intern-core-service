@@ -904,6 +904,14 @@ public class CoreController {
 					criteriaTotalMark = criteriaTotalMark + questionResponse.getQuestionResult().getResultTotalMark();
 				}
 				
+				Float totalAllMark = 0.0f;
+				Float totalMarkPercent = 0.0f;
+
+				for (QuestionResponse questionResponse : criteriaQuestionsResponse.getQuestions()) {
+					totalAllMark = totalAllMark + (questionResponse.getQuestionTotalMark() * questionResponse.getQuestionWeightage());
+				}
+				totalMarkPercent = criteriaQuestionsResponse.getCriteria().getCriteriaPercentage() / totalAllMark;
+				
 				for (QuestionResponse questionResponse : criteriaQuestionsResponse.getQuestions()) {
 					ReportResponse reportResponse = new ReportResponse();
 					
@@ -928,11 +936,11 @@ public class CoreController {
 					reportResponse.setCriteriaDesc(criteriaResponse.getCriteriaDesc());
 					reportResponse.setCriteriaPercentage(criteriaResponse.getCriteriaPercentage());
 					
-					if (questionResponse.getCriteriaId().equals(criteriaResponse.getCriteriaId())) {
-						Float percent = (criteriaQuestionsResponse.getCriteria().getCriteriaPercentage().floatValue() / 100);
-						reportResponse.setCriteriaTotalMark(criteriaTotalMark * percent);
-					}
-					
+//					if (questionResponse.getCriteriaId().equals(criteriaResponse.getCriteriaId())) {
+//						Float percent = (criteriaQuestionsResponse.getCriteria().getCriteriaPercentage().floatValue() / 100);
+//						reportResponse.setCriteriaTotalMark(criteriaTotalMark * percent);
+//					}
+					reportResponse.setCriteriaTotalMark((criteriaTotalMark * totalMarkPercent));
 					reportResponses.add(reportResponse);
 				}
 				
