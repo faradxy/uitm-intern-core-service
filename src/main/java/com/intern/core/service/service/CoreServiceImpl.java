@@ -268,6 +268,13 @@ public class CoreServiceImpl implements CoreService {
 	public List<ApplicationResponse> filterApplications(ApplicationRequest applicationRequest) {
 		List<ApplicationResponse> applicationResponses = new ArrayList<ApplicationResponse>();
 		List<ApplicationEntity> applicationEntities = applicationRepository.findAll();
+
+		Boolean applyBtnStatus = true;
+		for (ApplicationEntity applicationEntity : applicationEntities) {
+			if (applicationEntity.getApplicationStudStatus().equals("ACP") && applicationEntity.getApplicationCompStatus().equals("ACP")) {
+				applyBtnStatus = false;
+			}
+		}
 		
 		for (ApplicationEntity applicationEntity : applicationEntities) {
 			ApplicationResponse applicationResponse = new ApplicationResponse();
@@ -278,6 +285,7 @@ public class CoreServiceImpl implements CoreService {
 			applicationResponse.setApplicationStudStatus(applicationEntity.getApplicationStudStatus());
 			applicationResponse.setStudentMatricNum(applicationEntity.getStudentMatricNum());
 			applicationResponse.setCompanyId(applicationEntity.getCompanyId());
+			applicationResponse.setApplicationActionButton(applyBtnStatus);
 			
 			if (BaseUtility.isNotBlank(applicationEntity.getCompanyId())) {
 				CompanyEntity companyEntity = companyRepository.findByCompanyId(applicationEntity.getCompanyId());
@@ -332,14 +340,25 @@ public class CoreServiceImpl implements CoreService {
 
 		Boolean applyBtnStatus = true;
 		// determine if student still eligible to apply
-		if (applicationEntities.size() >= 3) {
-			applyBtnStatus = false;
-			
-			for (ApplicationEntity applicationEntity : applicationEntities) {
-				if (applicationEntity.getApplicationCompStatus().equals("REJ")) {
-					applyBtnStatus = true;
-				}
+//		if (applicationEntities.size() >= 3) {
+//			applyBtnStatus = false;
+//			
+//			for (ApplicationEntity applicationEntity : applicationEntities) {
+//				if (applicationEntity.getApplicationCompStatus().equals("REJ")) {
+//					applyBtnStatus = true;
+//				}
+//			}
+//		}
+		
+		Integer total = 0;
+		for (ApplicationEntity applicationEntity : applicationEntities) {
+			if (applicationEntity.getApplicationCompStatus().equals("ACP") && !applicationEntity.getApplicationStudStatus().equals("REJ")) {
+				total++;
 			}
+		}
+		System.out.print(total);
+		if (total > 2) {
+			applyBtnStatus = false;
 		}
 		
 		for (ApplicationEntity applicationEntity : applicationEntities) {

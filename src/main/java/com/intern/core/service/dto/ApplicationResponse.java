@@ -22,6 +22,8 @@ public class ApplicationResponse {
 	private String companyId;
 	
 	private CompanyResponse company;
+	
+	private Boolean applicationActionButton;
 
 	public String getApplicationId() {
 		return applicationId;
@@ -85,5 +87,13 @@ public class ApplicationResponse {
 
 	public void setCompany(CompanyResponse company) {
 		this.company = company;
+	}
+
+	public Boolean getApplicationActionButton() {
+		return applicationActionButton;
+	}
+
+	public void setApplicationActionButton(Boolean applicationActionButton) {
+		this.applicationActionButton = applicationActionButton;
 	}
 }
