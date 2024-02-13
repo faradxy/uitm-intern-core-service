@@ -859,7 +859,7 @@ public class CoreController {
 		JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(filterStudentsResults);
 		jasperParams.put("STUDENT_RESULT", dataSource);
 		
-		InputStream inputStream = getClass().getResourceAsStream("/report/REPORT.jrxml");
+		InputStream inputStream = getClass().getResourceAsStream("/report/REPORT_AZURE.jrxml");
 		JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
 		JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, jasperParams, new JREmptyDataSource());
 		
@@ -972,7 +972,7 @@ public class CoreController {
 			String pictureDirectory = getClass().getResource("/images/UITM_LOGO_FULL.png").toString();
 			jasperParams.put("PICTURE_DIRECTORY", pictureDirectory.replace("file:/", ""));
 			
-			InputStream inputStream = getClass().getResourceAsStream("/report/STUDENT_RESULT_REPORT.jrxml");
+			InputStream inputStream = getClass().getResourceAsStream("/report/STUDENT_RESULT_REPORT_AZURE.jrxml");
 			JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
 			JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, jasperParams, dataSource);
 			
