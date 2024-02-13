@@ -60,14 +60,14 @@
 				</reportElement>
 				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" size="12" isBold="true"/>
+					<font fontName="SansSerif" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[STUDENT RESULT]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="110" y="0" width="70" height="30" forecolor="#FFFFFF" backcolor="#61116A" uuid="29c4daa1-097b-4aee-8452-ab97333b4d8a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="12" isBold="true"/>
+					<font fontName="SansSerif" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[CS266]]></text>
 			</staticText>
@@ -77,7 +77,7 @@
 				</reportElement>
 				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" size="10" isBold="true"/>
+					<font fontName="SansSerif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[BACHELOR OF INFORMATION SYSTEMS (HONS.) INFORMATION SYSTEMS ENGINEERING]]></text>
 			</staticText>
@@ -108,7 +108,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="8" isBold="true"/>
+					<font fontName="SansSerif" size="8" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["CLASS"]]></textFieldExpression>
 			</textField>
@@ -121,7 +121,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="8" isBold="true"/>
+					<font fontName="SansSerif" size="8" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["STATUS"]]></textFieldExpression>
 			</textField>
@@ -134,7 +134,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="Arial" size="8"/>
+					<font fontName="SansSerif" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[($P{CLASS_FILTER} != null) ? $P{CLASS_FILTER} : ""]]></textFieldExpression>
 			</textField>
@@ -147,7 +147,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="Arial" size="8"/>
+					<font fontName="SansSerif" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[($P{STATUS_FILTER} != null) ? $P{STATUS_FILTER} : ""]]></textFieldExpression>
 			</textField>
@@ -157,7 +157,7 @@
 					<pen lineWidth="2.0" lineStyle="Double" lineColor="#BFBFBF"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="6" isBold="true"/>
+					<font fontName="SansSerif" size="6" isBold="true"/>
 				</textElement>
 				<text><![CDATA[MATRIC NUMBER]]></text>
 			</staticText>
@@ -169,7 +169,7 @@
 					<pen lineWidth="2.0" lineStyle="Double" lineColor="#BFBFBF"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="6" isBold="true"/>
+					<font fontName="SansSerif" size="6" isBold="true"/>
 				</textElement>
 				<text><![CDATA[FULL NAME]]></text>
 			</staticText>
@@ -179,7 +179,7 @@
 					<pen lineWidth="2.0" lineStyle="Double" lineColor="#BFBFBF"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="6" isBold="true"/>
+					<font fontName="SansSerif" size="6" isBold="true"/>
 				</textElement>
 				<text><![CDATA[CLASS]]></text>
 			</staticText>
@@ -189,7 +189,7 @@
 					<pen lineWidth="2.0" lineStyle="Double" lineColor="#BFBFBF"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="6" isBold="true"/>
+					<font fontName="SansSerif" size="6" isBold="true"/>
 				</textElement>
 				<text><![CDATA[STATUS]]></text>
 			</staticText>
@@ -199,7 +199,7 @@
 					<pen lineWidth="2.0" lineStyle="Double" lineColor="#BFBFBF"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="6" isBold="true"/>
+					<font fontName="SansSerif" size="6" isBold="true"/>
 				</textElement>
 				<text><![CDATA[MARK]]></text>
 			</staticText>
@@ -209,7 +209,7 @@
 					<pen lineWidth="2.0" lineStyle="Double" lineColor="#BFBFBF"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="6" isBold="true"/>
+					<font fontName="SansSerif" size="6" isBold="true"/>
 				</textElement>
 				<text><![CDATA[GRADE]]></text>
 			</staticText>
@@ -219,7 +219,7 @@
 					<pen lineWidth="2.0" lineStyle="Double" lineColor="#BFBFBF"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="6" isBold="true"/>
+					<font fontName="SansSerif" size="6" isBold="true"/>
 				</textElement>
 				<text><![CDATA[POINTER]]></text>
 			</staticText>
@@ -229,7 +229,7 @@
 					<pen lineWidth="2.0" lineStyle="Double" lineColor="#BFBFBF"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="6" isBold="true"/>
+					<font fontName="SansSerif" size="6" isBold="true"/>
 				</textElement>
 				<text><![CDATA[CST656]]></text>
 			</staticText>
@@ -239,7 +239,7 @@
 					<pen lineWidth="2.0" lineStyle="Double" lineColor="#BFBFBF"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="6" isBold="true"/>
+					<font fontName="SansSerif" size="6" isBold="true"/>
 				</textElement>
 				<text><![CDATA[MARK]]></text>
 			</staticText>
@@ -249,7 +249,7 @@
 					<pen lineWidth="2.0" lineStyle="Double" lineColor="#BFBFBF"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="6" isBold="true"/>
+					<font fontName="SansSerif" size="6" isBold="true"/>
 				</textElement>
 				<text><![CDATA[GRADE]]></text>
 			</staticText>
@@ -259,7 +259,7 @@
 					<pen lineWidth="2.0" lineStyle="Double" lineColor="#BFBFBF"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="6" isBold="true"/>
+					<font fontName="SansSerif" size="6" isBold="true"/>
 				</textElement>
 				<text><![CDATA[POINTER]]></text>
 			</staticText>
@@ -269,7 +269,7 @@
 					<pen lineWidth="2.0" lineStyle="Double" lineColor="#BFBFBF"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="6" isBold="true"/>
+					<font fontName="SansSerif" size="6" isBold="true"/>
 				</textElement>
 				<text><![CDATA[CST656]]></text>
 			</staticText>
@@ -305,7 +305,7 @@
 							<textField>
 								<reportElement x="0" y="0" width="70" height="20" uuid="e85fa965-a772-441f-89d3-c57733b89ccf"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="Arial" size="6"/>
+									<font fontName="SansSerif" size="6"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{studentMatricNum}]]></textFieldExpression>
 							</textField>
@@ -322,7 +322,7 @@
 								<reportElement x="0" y="0" width="125" height="20" uuid="652e6f3b-fc28-490b-b86e-6579fc5e8bce"/>
 								<box leftPadding="5"/>
 								<textElement textAlignment="Left" verticalAlignment="Middle">
-									<font fontName="Arial" size="6"/>
+									<font fontName="SansSerif" size="6"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{studentName}]]></textFieldExpression>
 							</textField>
@@ -338,7 +338,7 @@
 							<textField>
 								<reportElement x="0" y="0" width="50" height="20" uuid="66a0228c-686a-454c-9977-942a88d27dbc"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="Arial" size="6"/>
+									<font fontName="SansSerif" size="6"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{studentClass}]]></textFieldExpression>
 							</textField>
@@ -354,7 +354,7 @@
 							<textField>
 								<reportElement x="0" y="0" width="50" height="20" uuid="98d46449-b869-476d-9fb3-62c1c1fb85b7"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="Arial" size="6"/>
+									<font fontName="SansSerif" size="6"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{studentEvaluationsStatus}]]></textFieldExpression>
 							</textField>
@@ -369,7 +369,7 @@
 							<textField>
 								<reportElement x="0" y="0" width="40" height="20" uuid="5999540e-172e-4976-aad6-85edb65abb5b"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="Arial" size="6"/>
+									<font fontName="SansSerif" size="6"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{subject1TotalMark}]]></textFieldExpression>
 							</textField>
@@ -384,7 +384,7 @@
 							<textField>
 								<reportElement x="0" y="0" width="40" height="20" uuid="15d41f42-f04e-4ed1-94b4-5bc4c0d8ff9c"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="Arial" size="6"/>
+									<font fontName="SansSerif" size="6"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{subject1Grade}]]></textFieldExpression>
 							</textField>
@@ -399,7 +399,7 @@
 							<textField>
 								<reportElement x="0" y="0" width="40" height="20" uuid="4d45c152-b594-48de-94b7-a07fcbfbad2d"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="Arial" size="6"/>
+									<font fontName="SansSerif" size="6"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{subject1Pointer}]]></textFieldExpression>
 							</textField>
@@ -414,7 +414,7 @@
 							<textField>
 								<reportElement x="0" y="0" width="40" height="20" uuid="66627735-76b3-4557-a5b2-6820c88acc2f"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="Arial" size="6"/>
+									<font fontName="SansSerif" size="6"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{subject2TotalMark}]]></textFieldExpression>
 							</textField>
@@ -429,7 +429,7 @@
 							<textField>
 								<reportElement x="0" y="0" width="40" height="20" uuid="0b7f717b-26f1-4fbb-8a78-8a01093dda60"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="Arial" size="6"/>
+									<font fontName="SansSerif" size="6"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{subject2Grade}]]></textFieldExpression>
 							</textField>
@@ -444,7 +444,7 @@
 							<textField>
 								<reportElement x="0" y="0" width="40" height="20" uuid="5cfd7705-1c0a-4d95-9ef2-17e0767131e6"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="Arial" size="6"/>
+									<font fontName="SansSerif" size="6"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{subject2Pointer}]]></textFieldExpression>
 							</textField>
