@@ -98,7 +98,7 @@
 						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 					<textElement markup="none">
-						<font fontName="Aileron" size="8"/>
+						<font fontName="Arial" size="8"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{criteriaDesc}]]></textFieldExpression>
 				</textField>
@@ -142,7 +142,7 @@
 			<staticText>
 				<reportElement mode="Opaque" x="110" y="0" width="70" height="30" forecolor="#FFFFFF" backcolor="#61116A" uuid="09c00864-cfcb-4479-978a-7b25a1503bd3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Aileron" size="12" isBold="true"/>
+					<font fontName="Arial" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[CS266]]></text>
 			</staticText>
@@ -152,7 +152,7 @@
 				</reportElement>
 				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Aileron" size="10" isBold="true"/>
+					<font fontName="Arial" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[BACHELOR OF INFORMATION SYSTEMS (HONS.) INFORMATION SYSTEMS ENGINEERING]]></text>
 			</staticText>
@@ -322,7 +322,7 @@
 				<reportElement x="110" y="30" width="424" height="30" uuid="0b150782-b029-4923-a8b4-62347ac040bb"/>
 				<box padding="5"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Aileron" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{EVALUATION_NAME}]]></textFieldExpression>
 			</textField>
@@ -496,7 +496,7 @@
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="Aileron" size="8"/>
+					<font fontName="Arial" size="8"/>
 				</textElement>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -508,7 +508,7 @@
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="Aileron" size="8"/>
+					<font fontName="Arial" size="8"/>
 				</textElement>
 			</textField>
 			<textField>
