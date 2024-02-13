@@ -270,9 +270,13 @@ public class CoreServiceImpl implements CoreService {
 		List<ApplicationEntity> applicationEntities = applicationRepository.findAll();
 
 		Boolean applyBtnStatus = true;
-		for (ApplicationEntity applicationEntity : applicationEntities) {
-			if (applicationEntity.getApplicationStudStatus().equals("ACP") && applicationEntity.getApplicationCompStatus().equals("ACP")) {
-				applyBtnStatus = false;
+		if (BaseUtility.isNotBlank(applicationRequest.getStudentMatricNum())) {
+			List<ApplicationEntity> studentApplicationEntities = applicationRepository.findByStudentMatricNum(applicationRequest.getStudentMatricNum());
+			
+			for (ApplicationEntity applicationEntity : studentApplicationEntities) {
+				if (applicationEntity.getApplicationStudStatus().equals("ACP") && applicationEntity.getApplicationCompStatus().equals("ACP")) {
+					applyBtnStatus = false;
+				}
 			}
 		}
 		
